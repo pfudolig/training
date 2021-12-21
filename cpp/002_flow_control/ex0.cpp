@@ -1,7 +1,11 @@
 #include <iostream>
+using namespace std;
 
 int main(int argc, char** argv) {
-  //write your code here
+  int start = stoi(argv[1]);
+  int stop = stoi(argv[argc-1]);
 
-  return 0;
+  for(int i = start; i <= stop; i++){
+    cout << i << endl;
+  }
 }
