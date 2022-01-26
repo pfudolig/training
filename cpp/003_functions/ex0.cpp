@@ -1,7 +1,25 @@
 #include <iostream>
-//define your functions here
-int main(int argc, char** argv) {
-  //write your code here
+#include <assert.h>
+#include <string>
 
+int sum(int n);
+
+int sum(int n) {
+  if (n != 0) {
+    return n + sum (n-1);
+  }
   return 0;
+}
+
+
+int main() {
+  int n;
+
+  std::cout << "Enter an integer number: ";
+  std::cin >> n;
+
+  int num = sum(n);
+
+  std::cout << num << std::endl;
+
 }
